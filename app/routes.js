@@ -1,9 +1,7 @@
 const express = require("express"),
 	router = express.Router();
 
-router.get("/", (req, res) => {
-	return res.render("../assets/views/homepage.pug");
-});
+router.get("/", (req, res) => res.render("../assets/views/homepage.pug"));
 //router.get("/about", (req, res) => {
 //	res.send("Go to about page");
 //});
