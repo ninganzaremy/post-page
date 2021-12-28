@@ -22,8 +22,8 @@ router.get("/", (req, res) => res.render("../assets/views/homepage.pug"));
 
 //	`);
 //});
-router.get("./pug", (req, res) => {
-	return res.send("../assets/views/testing.pug", {
+router.get("/pug", (req, res) => {
+	return res.render("../assets/views/testing.pug", {
 		username: "Remix",
 		fname: "coder",
 		lname: "javascript",

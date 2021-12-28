@@ -1,0 +1,14 @@
+body {
+	background: white;
+}
+h1 {
+	color: rgb(182, 33, 33);
+}
+header {
+	background: blue;
+	color: white;
+}
+.logo {
+	font-size: 2rem;
+	text-align: center;
+}
