@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const DB = require("../database/connection");
+
 const port = 3000;
 
 const routes = require("./routes.js");
