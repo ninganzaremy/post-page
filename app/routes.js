@@ -5,6 +5,8 @@ router.get("/", (req, res) => res.render("../assets/views/homepage.pug"));
 
 router.get("/generic", (req, res) => res.render("../assets/views/generic.pug"));
 
+router.get("/postCreate", (req, res) => res.render("../assets/views/postCreate.pug"));
+
 //router.get("/about", (req, res) => {
 //	res.send("Go to about page");
 //});

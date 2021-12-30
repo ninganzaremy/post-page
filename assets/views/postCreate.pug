@@ -1,0 +1,16 @@
+extends layouts/app
+
+block seo 
+  title Homepage 
+
+block content 
+
+  // Banner
+  section#banner
+    .content
+      form
+        label Title
+        input(type="text" name="demo-name" id="demo-name" value="" placeholder="Name")
+        label Description 
+        textarea(name="demo-message" id="demo-message" placeholder="Enter your message" rows="6")
+        input(type="submit" value="Send Message" class="primary")
