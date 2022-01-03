@@ -8,9 +8,11 @@ block content
   // Banner
   section#banner
     .content
-      form
+      form(action="/postCreate" method="post")
         label Title
-        input(type="text" name="demo-name" id="demo-name" value="" placeholder="Name")
+        input(type="text" name="title" id="demo-name" value="" placeholder="Name")
+        label IMage URL
+        input(type="text" name="image_url" id="demo-name" value="" placeholder="Image URL")
         label Description 
-        textarea(name="demo-message" id="demo-message" placeholder="Enter your message" rows="6")
+        textarea(name="description" id="demo-message" placeholder="Enter your message" rows="6")
         input(type="submit" value="Send Message" class="primary")
