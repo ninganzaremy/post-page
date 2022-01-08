@@ -74,7 +74,23 @@ router.post("/post/:id/edit", (req, res) => {
 				console.log(error);
 				return res.redirect("/post/create");
 			} else {
+				return res.redirect(`/post/${req.params.id}`);
+			}
+		},
+	);
+});
+router.get("/post/:id/delete", (req, res) => {
+	const post = req.body;
+	DB.query(
+		` DELETE FROM posts WHERE id = ${req.params.id}`,
+
+		(error, result) => {
+			if (error) {
+				console.log("error:");
+				console.log(error);
 				return res.redirect(`/post/${req.params.id}/edit`);
+			} else {
+				return res.redirect(`/`);
 			}
 		},
 	);
