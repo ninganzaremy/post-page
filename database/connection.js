@@ -17,7 +17,7 @@ DB.connect((error) => {
 				//create table
 				console.log("Creating Table posts");
 				DB.query(
-					`CREATE TABLE posts( id INTEGER unsigned NOT NULL PRIMARY KEY,
+					`CREATE TABLE posts( id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT  PRIMARY KEY,
 				TITLE VARCHAR(60) NOT NULL, DESCRIPTION MEDIUMTEXT NOT NULL, IMAGE_Url MEDIUMTEXT NOT NULL
 				)`,
 					(error, results) => {

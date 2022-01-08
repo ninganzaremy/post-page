@@ -1,4 +1,4 @@
-extends layouts/app
+extends ../layouts/app
 
 block seo 
   title Homepage 
@@ -8,7 +8,7 @@ block content
   // Banner
   section#banner
     .content
-      form(action="/postCreate" method="post")
+      form(action="/post/create" method="post")
         label Title
         input(type="text" name="title" id="demo-name" value="" placeholder="Name")
         label IMage URL
