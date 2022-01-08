@@ -1,14 +1,14 @@
 extends ../layouts/app
 
 block seo 
-  title Homepage 
+  title Create a Post 
 
 block content 
 
   // Banner
   section#banner
     .content
-      form(action="/post/create" method="post")
+      form(action="/post/create" method="POST")
         label Title
         input(type="text" name="title" id="demo-name" value="" placeholder="Name")
         label IMage URL
